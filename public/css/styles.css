@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "ubuntu", sans-serif;
+    background-color: #BEADFA;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0;
+}
+
+.right {
+    width: 50%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto 0;
+
+}
+
+.category,
+.blacklist,
+.type,
+.amount {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+label {
+    height: 40px;
+    width: 40%;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+select,
+input {
+    height: 100%;
+    width: 60%;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    outline: none;
+}
+
+input {
+    width: 58%;
+    padding-left: 10px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.8);
+    background-color: #BEADFA;
+    color: #fff;
+
+}
+
+.joke {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 100%;
+    min-height: 50vh;
+    text-align: center;
+    font-family: "ubuntu", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    overflow-y: auto;
+    resize: none;
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    transform: translateY(10px);
+}
+
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 80%;
+    }
+
+}

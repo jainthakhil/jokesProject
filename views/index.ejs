@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke of name</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>Getting bored? Lets have some laugh 😆.</h1>
+        <form action="/" method="post">
+          <div class="category">
+            <label for="category">Choose category:</label>
+            <select id="category" name="category">
+              <option disabled selected value="">Select an option</option>
+              <option value="Any">Any</option>
+              <option value="Programming">Programming</option>
+              <option value="Dark">Dark</option>
+              <option value="Spooky">Spooky</option>
+            </select>
+          </div>
+          <div class="blacklist">
+            <label for="blacklist">Choose blacklist topics:</label>
+            <select id="blacklist" name="blacklist">
+              <option disabled selected value="">Select an option</option>
+              <option value="Religious">Religious</option>
+              <option value="Political">Political</option>
+              <option value="Racist">Racist</option>
+              <option value="Sexist">Sexist</option>
+            </select>
+          </div>
+          <div class="type">
+            <label for="part">Choose type:</label>
+            <select id="line" name="line">
+              <option disabled selected value="">Select an option</option>
+              <option value="Single">Single Line</option>
+              <option value="Double">Double Line</option>
+            </select>
+          </div>
+          <div class="amount">
+            <label for="">Amount of joke:</label>
+            <input type="number" name="amount" id="" />
+          </div>
+          <button type="submit">Go!</button>
+        </form>
+      </div>
+
+      <div class="right">
+        <div class="joke">
+          <textarea id="readonly-textarea" readonly>
+            <%=content%>
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <footer>Akhil Jainth © 2023.</footer>
+  </body>
+</html>
